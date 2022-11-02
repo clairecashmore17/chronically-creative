@@ -2,6 +2,9 @@
   "name": "chronically-creative",
   "version": "1.0.0",
   "description": "",
+  "engine": {
+    "node": "16.15.1"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
