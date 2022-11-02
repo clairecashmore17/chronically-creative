@@ -1,0 +1,42 @@
+.nav-head {
+  padding-right: 100px;
+  background-image: url("../../images/header.jpg");
+  background-position: 200px 200px;
+
+  height: 100px;
+}
+.web-title {
+  color: var(--dark);
+  font-weight: 700;
+}
+.nav-items {
+  color: var(--dark);
+}
+.logout {
+  color: rgb(140, 4, 29);
+}
+.login {
+  margin-bottom: 0;
+  color: var(--dark);
+}
+.btn-close {
+  background-color: red;
+}
+
+@media screen and (max-width: 520px) {
+  .web-title {
+    font-size: smaller;
+  }
+  .nav-items {
+    font-size: smaller;
+  }
+  .logout {
+    font-size: smaller;
+  }
+  .nav-head {
+    background-size: 80%;
+    background-position: 160px 100px;
+    width: 100%;
+    height: 100px;
+  }
+}

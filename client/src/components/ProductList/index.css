@@ -1,0 +1,15 @@
+.product-title {
+  color: var(--tertiary);
+  border-bottom: var(--primary) solid 5px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.product-list {
+  padding: 25px;
+  background-color: var(--dark);
+  width: 100%;
+}
+.products {
+  padding-left: 6%;
+  justify-content: flex-start;
+}
