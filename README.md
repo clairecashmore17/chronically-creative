@@ -17,7 +17,7 @@
 
 ## About the Project
 
-![ScreenCap](./public/images/screen-cap.png)<br />
+![ScreenCap](https://raw.githubusercontent.com/clairecashmore17/chronically-creative/main/client/public/images/screen-cap.png))<br />
 [Deployment](https://chronically-creative.herokuapp.com/)
 
 ## Languages and Libraries Used
