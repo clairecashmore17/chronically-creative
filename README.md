@@ -17,7 +17,7 @@
 
 ## About the Project
 
-![PortfolioScreenshot](./public/images/site-screen-cap.png)<br />
+![ScreenCap](./public/images/screen-cap.png)<br />
 [Deployment](https://chronically-creative.herokuapp.com/)
 
 ## Languages and Libraries Used
