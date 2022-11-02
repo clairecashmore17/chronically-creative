@@ -115,6 +115,7 @@ button[disabled] {
 
 .prod-img {
   width: 100%;
+  max-width: 300px;
   max-height: 200px;
   min-height: 200px;
   border-radius: 15px;
@@ -204,7 +205,7 @@ input:focus {
 
 .card {
   background-color: var(--primary);
-  width: 30%;
+  width: 25%;
   text-align: center;
   margin: 5px;
   border-radius: 15px;
@@ -403,7 +404,7 @@ input:focus {
 }
 @media screen and (max-width: 520px) {
   .prod-img {
-    width: 200px;
+    width: 150px;
     max-height: 100px;
     min-height: 100px;
     border-radius: 15px;
@@ -411,7 +412,7 @@ input:focus {
   }
 
   .card {
-    width: 300px;
-    max-height: 200px;
+    width: 200px;
+    height: 200px;
   }
 }
