@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+}
+#footer-btn {
+  background-color: rgb(143, 165, 136);
+  width: fit-content;
+  color: rgb(80, 105, 85);
+  padding: 1px;
+}
+#footer-btn:hover {
+  color: black;
+  background-color: rgb(92, 103, 88);
+}
+.toggled-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(189, 202, 194);
+}
+.toggled-footer a {
+  color: black;
+}

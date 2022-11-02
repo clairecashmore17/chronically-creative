@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useQuery } from "@apollo/client";
 
 import ProductItem from "../ProductItem";
@@ -61,6 +61,7 @@ function ProductList() {
         {" "}
         Your own crochet is a click away...
       </h2>
+
       {state.products.length ? (
         <div className="flex-row products">
           {filterProducts().map((product, index) => (

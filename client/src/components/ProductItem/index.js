@@ -7,9 +7,13 @@ import { Navbar, Nav, Container, Modal, Tab } from "react-bootstrap";
 import Auth from "../../utils/auth.js";
 import SignupForm from "../../pages/SignupForm";
 import LoginForm from "../../pages/LoginForm";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import Grow from "@mui/material/Grow";
+
 function ProductItem(item) {
   // define our state variable
   const [state, dispatch] = useStoreContext();
+  const [checked, setChecked] = useState(true);
   const { cart } = state;
   const loggedIn = Auth.loggedIn();
   const [showModal, setShowModal] = useState(false);
@@ -40,25 +44,30 @@ function ProductItem(item) {
 
   return (
     <>
-      <div className="card px-1 py-1">
-        <Link to={`/products/${_id}`}>
-          <img className="prod-img" alt={name} src={`/images/${image}`} />
-          <p className="mini-title abril">{name}</p>
-        </Link>
-        <div>
-          {/* <div>
+      <Grow in={checked}>
+        <div className="card centered px-1 py-1">
+          <Link to={`/products/${_id}`}>
+            <img className="prod-img" alt={name} src={`/images/${image}`} />
+            <p className="mini-title abril">{name}</p>
+          </Link>
+          <div>
+            {/* <div>
           {quantity} {pluralize("item", quantity)} in stock
         </div> */}
-          <span>${price}</span>
+            <span>${price}</span>
+          </div>
+          {loggedIn ? (
+            <button className="cart-btn" onClick={addToCart}>
+              <AddShoppingCartIcon />
+            </button>
+          ) : (
+            <button className="cart-btn" onClick={() => setShowModal(true)}>
+              <AddShoppingCartIcon />
+            </button>
+          )}
         </div>
-        {loggedIn ? (
-          <button className="cart-btn" onClick={addToCart}>
-            Add to cart
-          </button>
-        ) : (
-          <button onClick={() => setShowModal(true)}>Add to cart</button>
-        )}
-      </div>
+      </Grow>
+
       <Modal
         size="lg"
         show={showModal}

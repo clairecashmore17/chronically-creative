@@ -210,7 +210,9 @@ input:focus {
   margin: 5px;
   border-radius: 15px;
 }
-
+.centered {
+  align-items: center;
+}
 .error-text {
   color: var(--error);
 }
