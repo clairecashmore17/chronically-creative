@@ -86,7 +86,7 @@ function ProductList() {
           ))}
         </div>
       ) : (
-        <h3 className="product-title">You haven't added any products yet!</h3>
+        <h3 className="product-title">There are not products right now!</h3>
       )}
       {loading ? <img src={spinner} alt="loading" /> : null}
     </div>
